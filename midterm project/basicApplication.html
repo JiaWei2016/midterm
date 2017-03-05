@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+
+  <body>
+   <div class="sidebar">
+     <div id="intro">
+       <h2 class="title"> Crime in Philadelphia </h2>
+       <h3 class="subtitle"> Crime Overview </h3>
+       <p class="main">You are able to know crime type and location. Try to click on any point, then you are able to find their crime type,
+         time and location information. </p>
+       <p> You can also click <strong>next button</strong> to know more about crime information of Philadelphia.</p>
+     </div>
+   </div>
+
+   <div id="results" style="display: none;">
+     <h1 class="Type-of-crime">Type of Crime</h1>
+     <p class="main">What happend in this block is <span class="Type-of-crime">Type of Crime</span>.</p>
+     <p> What happend in this block is<span class="Type-of-crime">
+     Type of Crime</span>. Some text here </p>
+   </div>
+
+    <!-- Map -->
+    <div id="map" style="position: absolute; right: 0; left: 400px; top: 0; bottom: 0;"></div>
+
+
+    <button id="next" type="button"> Next </button>
+    <button id="previous" type="button"> Previous </button>
+
+    <!-- Start Javascript Imports -->
+
+    <script src="leaflet.js"></script>
+    <script src="underscore.js"></script>
+    <script src="jquery-2.2.0.js"></script>
+    <script src="basicApplication.js"></script>
+  </body>
+
+
+</html>
